@@ -1,6 +1,5 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-# import pandas as pd
 
 def extract_stats():
     
@@ -21,6 +20,8 @@ def extract_stats():
             for i in range(len(rows))]
 
   print(player_stats[0])
+
+  
 if __name__ == '__main__':
     print('helloworld')
     extract_stats()
