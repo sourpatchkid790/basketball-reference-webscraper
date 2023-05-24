@@ -40,6 +40,9 @@ class bbrefScraper:
 
   def get_player_stats(self, player_name):
     print("Player Name:", player_name)
+    # print(self.dataframe.loc[player_name])
+    print(self.dataframe.loc[(self.dataframe["Player"] == player_name)] )
+   
 
 
   def __init__(self):
@@ -49,6 +52,7 @@ class bbrefScraper:
 
 if __name__ == '__main__':
     scraper = bbrefScraper()
-    print('first 10')
+    # print('first 10')
     print(scraper.dataframe.head(10))
+    scraper.get_player_stats("Quincy Acy")
     
